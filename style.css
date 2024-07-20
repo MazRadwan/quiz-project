@@ -77,6 +77,12 @@ button:hover {
 
 #results {
   margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+  overflow-y: auto;
+  max-height: calc(
+    100vh - 40px
+  ); /* Adjust as necessary to fit within viewport */
 }
 
 #results-container {
