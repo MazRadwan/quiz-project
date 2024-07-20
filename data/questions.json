@@ -1137,5 +1137,110 @@
     ],
     "answer": [2, 3],
     "module": "Module 4"
+  },
+  {
+    "id": "31",
+    "question": "A student is learning about Amazon Simple Storage Service (Amazon S3). During an interview, a potential employer asks the student to explain how Amazon S3 can be used as a storage solution. Which option is a use case for Amazon S3?",
+    "options": [
+      "Shared file systems",
+      "Block-level storage",
+      "Hosting active databases",
+      "Data lake"
+    ],
+    "answer": [3],
+    "module": "Module 3"
+  },
+  {
+    "id": "32",
+    "question": "A __ organizes the Amazon Simple Storage Service (Amazon S3) namespace at the highest level.",
+    "options": ["Bucket", "Container", "Group", "Region"],
+    "answer": [0],
+    "module": "Module 3"
+  },
+  {
+    "id": "33",
+    "question": "A developer wants to store image files in a bucket that is called images-bucket, but receives the error BucketAlreadyExists. Which action must the developer take to resolve this error?",
+    "options": [
+      "The developer must contact AWS Support to request approval to use the same bucket name.",
+      "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.",
+      "Bucket names are unique to the Region that they are created in. If the requested bucket name is not available, the developer must create the images-bucket in a different Region.",
+      "Bucket names go to the highest bidder. The developer must outbid the current bucket owner."
+    ],
+    "answer": [1],
+    "module": "Module 3"
+  },
+  {
+    "id": "34",
+    "question": "A developer is using Amazon Simple Storage Service (Amazon S3) to host a static website in a bucket that is called frank-martha-cafe. This bucket is in the us-east-1 Region. Which URL is the virtual-hosted-style URL for the website?",
+    "options": [
+      "https://frank-martha-cafe.s3-website-us-east-1.amazonaws.com",
+      "https://frank-martha-cafe.s3-us-east-1.amazonaws.com",
+      "https://s3-website-us-east-1.amazonaws.com/frank-martha-cafe",
+      "https://www.frank-martha-cafe.s3-website-us-east-1.amazonaws.com"
+    ],
+    "answer": [0],
+    "module": "Module 3"
+  },
+  {
+    "id": "35",
+    "question": "After versioning is enabled on an Amazon Simple Storage Service (Amazon S3) bucket, it can be disabled.",
+    "options": ["True", "False"],
+    "answer": [1],
+    "module": "Module 3"
+  },
+  {
+    "id": "36",
+    "question": "What is the largest size of an object that a user can upload to Amazon Simple Storage Service (Amazon S3) in a single PUT operation?",
+    "options": ["5GB", "100MB", "5TB", "1GB"],
+    "answer": [0],
+    "module": "Module 3"
+  },
+  {
+    "id": "37",
+    "question": "A developer uses an Amazon Simple Storage Service (Amazon S3) bucket. They want to allow a certain AWS Identity and Access Management (IAM) user to perform any S3 operations on the bucket and its objects. They also want to follow AWS recommendations for granting permissions. Which mechanism should the developer apply to the bucket?",
+    "options": [
+      "Cross-Origin Resource Sharing (CORS)",
+      "IAM policy",
+      "Bucket policy",
+      "Bucket access control list (ACL)"
+    ],
+    "answer": [2],
+    "module": "Module 3"
+  },
+  {
+    "id": "38",
+    "question": "A developer wants to allow a user to download private objects directly from an Amazon Simple Storage Service (Amazon S3) bucket without needing AWS security credentials or permissions. What can the developer share with the user to grant them time-limited access to the objects?",
+    "options": [
+      "Their AWS account root user credentials",
+      "A presigned URL",
+      "The bucket endpoint URL",
+      "A temporary token"
+    ],
+    "answer": [1],
+    "module": "Module 3"
+  },
+  {
+    "id": "39",
+    "question": "Which method can be used to encrypt Amazon Simple Storage Service (Amazon S3) objects in transit?",
+    "options": [
+      "Secure Sockets Layer /Transport Layer Security (SSL/TLS)",
+      "Server-Side Encryption with Customer-Provided Keys (SSE-C)",
+      "Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)",
+      "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)"
+    ],
+    "answer": [0],
+    "module": "Module 3"
+  },
+  {
+    "id": "40",
+    "question": "A developer hosts a static website in an Amazon Simple Storage Service (Amazon S3) bucket. The website references image objects in another S3 bucket. However, these images do not display on the website. What could be the problem?",
+    "options": [
+      "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored.",
+      "Cross-Region Replication (CRR) has not been enabled on the bucket where the assets are stored.",
+      "Amazon S3 does not support object sharing between buckets.",
+      "The security group of the S3 bucket does not include an inbound rule to allow HTTP traffic on port 80."
+    ],
+    "answer": [0],
+    "module": "Module 3"
   }
 ]
