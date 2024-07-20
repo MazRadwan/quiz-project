@@ -1,0 +1,59 @@
+[
+  {
+    "id": "61",
+    "question": "Which of the following is a valid HTTP method used in RESTful web services?",
+    "options": ["GET", "POST", "DELETE", "All of the above"],
+    "answer": [3],
+    "module": "Module 6"
+  },
+  {
+    "id": "62",
+    "question": "What does CRUD stand for in the context of RESTful web services?",
+    "options": [
+      "Create, Read, Update, Delete",
+      "Connect, Reset, Update, Delete",
+      "Create, Reset, Upload, Download",
+      "None of the above"
+    ],
+    "answer": [0],
+    "module": "Module 6"
+  },
+  {
+    "id": "63",
+    "question": "Which HTTP method is used to update a resource in a RESTful web service?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answer": [2],
+    "module": "Module 6"
+  },
+  {
+    "id": "64",
+    "question": "Which HTTP status code indicates a successful request?",
+    "options": [
+      "200 OK",
+      "404 Not Found",
+      "500 Internal Server Error",
+      "403 Forbidden"
+    ],
+    "answer": [0],
+    "module": "Module 6"
+  },
+  {
+    "id": "65",
+    "question": "In RESTful web services, which format is commonly used to represent resources?",
+    "options": ["XML", "JSON", "HTML", "Both XML and JSON"],
+    "answer": [3],
+    "module": "Module 6"
+  },
+  {
+    "id": "66",
+    "question": "What does the acronym REST stand for?",
+    "options": [
+      "Representational State Transfer",
+      "Representational Stateless Transfer",
+      "Remote State Transfer",
+      "Remote Stateless Transfer"
+    ],
+    "answer": [0],
+    "module": "Module 6"
+  }
+]

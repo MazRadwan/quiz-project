@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  font-size: 1.2em;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#options {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+#results-container {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.result-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#score-tracker {
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #333;
+}
+
+#question {
+  font-size: 1.1em;
+  color: #666;
+}
+
+#module-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f0ad4e;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}

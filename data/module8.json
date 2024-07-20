@@ -1,0 +1,102 @@
+[
+  {
+    "id": "81",
+    "question": "What is a container?",
+    "options": [
+      "A full virtual machine with its own OS",
+      "A standardized unit of software that contains everything an application needs to run",
+      "A server hosting multiple applications",
+      "An application running on a cloud service"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "82",
+    "question": "What does a Dockerfile do?",
+    "options": [
+      "Manages the deployment of multiple containers",
+      "Specifies the components included in a container image",
+      "Monitors the performance of containers",
+      "Stores the data used by containers"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "83",
+    "question": "Which service is used to deploy and manage Kubernetes clusters on AWS?",
+    "options": ["Amazon ECS", "Amazon ECR", "Amazon EKS", "AWS Fargate"],
+    "answer": [2],
+    "module": "Module 8"
+  },
+  {
+    "id": "84",
+    "question": "What is the primary benefit of using containers over traditional VMs?",
+    "options": [
+      "Containers provide full OS isolation",
+      "Containers are faster to start and use fewer resources",
+      "Containers require no updates",
+      "Containers can run on any hardware"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "85",
+    "question": "Which AWS service is a fully managed container registry?",
+    "options": ["Amazon ECS", "Amazon ECR", "Amazon EKS", "AWS Fargate"],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "86",
+    "question": "What is the purpose of a Docker container's read/write layer?",
+    "options": [
+      "To store long-term persistent data",
+      "To enable the application to function properly while running",
+      "To manage network settings",
+      "To handle container orchestration"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "87",
+    "question": "Which deployment policy in Elastic Beanstalk involves downtime during deployment?",
+    "options": ["All at once", "Rolling", "Rolling with batch", "Blue/Green"],
+    "answer": [0],
+    "module": "Module 8"
+  },
+  {
+    "id": "88",
+    "question": "Which service can be used to launch containers on both AWS Fargate and Amazon EC2?",
+    "options": ["Amazon ECS", "Amazon ECR", "Amazon EKS", "Elastic Beanstalk"],
+    "answer": [0],
+    "module": "Module 8"
+  },
+  {
+    "id": "89",
+    "question": "Which benefit is NOT associated with Docker containers?",
+    "options": [
+      "Portability",
+      "Faster development cycles",
+      "Better resource utilization",
+      "Full OS virtualization"
+    ],
+    "answer": [3],
+    "module": "Module 8"
+  },
+  {
+    "id": "810",
+    "question": "What type of architecture is best suited for microservices?",
+    "options": [
+      "Monolithic architecture",
+      "Serverless architecture",
+      "Virtualized architecture",
+      "Containerized architecture"
+    ],
+    "answer": [3],
+    "module": "Module 8"
+  }
+]
