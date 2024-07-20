@@ -1,0 +1,124 @@
+[
+  {
+    "id": "71",
+    "question": "Which statement describes a characteristic of AWS Lambda?",
+    "options": [
+      "Lambda runs code only when it is activated by an event and uses only the compute resources that are needed.",
+      "A developer's methods and configuration options for ensuring high availability with Lambda are similar to their approach with Amazon Elastic Compute Cloud (Amazon EC2).",
+      "Lambda functions run in on-demand, temporary environments, and the developer controls when new environments are created or shut down.",
+      "A developer must write Lambda functions that use one of the runtimes that the Lambda service provides."
+    ],
+    "answer": [0],
+    "module": "Module 7"
+  },
+  {
+    "id": "72",
+    "question": "Which constraint cannot be modified?",
+    "options": [
+      "Function timeout",
+      "Reserved concurrency",
+      "Burst quota",
+      "Regional quota"
+    ],
+    "answer": [2],
+    "module": "Module 7"
+  },
+  {
+    "id": "73",
+    "question": "Which option describes how Amazon API Gateway invokes AWS Lambda?",
+    "options": [
+      "API Gateway directly invokes a function with a synchronous invocation.",
+      "Lambda processes API Gateway requests asynchronously and retries each request up to two times.",
+      "Lambda uses an event source mapping and polls API Gateway for requests.",
+      "API Gateway directly invokes a function and retries the request until it succeeds or expires."
+    ],
+    "answer": [0],
+    "module": "Module 7"
+  },
+  {
+    "id": "74",
+    "question": "Which actions require permissions that are defined in the AWS Lambda execution role? (Select TWO.)",
+    "options": [
+      "A Lambda function writes to an Amazon S3 bucket.",
+      "A Lambda function reads from an Amazon DynamoDB table.",
+      "A Lambda function creates log groups.",
+      "A Lambda function deletes CloudWatch Logs.",
+      "A Lambda function writes logs to CloudWatch Logs."
+    ],
+    "answer": [0, 2],
+    "module": "Module 7"
+  },
+  {
+    "id": "75",
+    "question": "Which AWS Lambda deployment option should be used?",
+    "options": [
+      "Copy the code into the Lambda console editor to create and deploy the function.",
+      "Upload a .zip file of the code to create and deploy the function.",
+      "Use the AWS CLI to deploy the function directly from the developer's machine.",
+      "Create a deployment package that includes the code and dependencies, and upload it to an Amazon S3 bucket."
+    ],
+    "answer": [0],
+    "module": "Module 7"
+  },
+  {
+    "id": "76",
+    "question": "Which issue might be addressed by adding provisioned concurrency to an AWS Lambda function?",
+    "options": [
+      "Another Lambda function runs in the same account and Region. It sometimes spikes and consumes all available concurrency, causing the function to fail.",
+      "An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests.",
+      "A legacy backend system fails intermittently when the developer connects to it. To avoid extra costs, they want to reduce the function's wait time when the backend fails.",
+      "The developer wants more visibility into transactions that use the Lambda function to identify bottlenecks."
+    ],
+    "answer": [1],
+    "module": "Module 7"
+  },
+  {
+    "id": "77",
+    "question": "Which AWS Lambda configuration setting might a developer use to manage function errors when configuring an Amazon Simple Notification Service (Amazon SNS) topic as the event source for a Lambda function? (Select TWO.)",
+    "options": [
+      "State machines",
+      "File systems",
+      "Destinations",
+      "Virtual private cloud",
+      "Asynchronous invocations"
+    ],
+    "answer": [2, 4],
+    "module": "Module 7"
+  },
+  {
+    "id": "78",
+    "question": "A zipped deployment package including code and custom libraries is 75 MB in size. Which AWS Lambda deployment option should be used?",
+    "options": [
+      "Copy the code into the Lambda console editor to create and deploy the function.",
+      "Upload a .zip file from an integrated development environment (IDE) to load the deployment package directly into the Lambda console.",
+      "Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console.",
+      "Upload the deployment package to an Amazon Elastic Block Store (Amazon EBS) volume, and use the File Systems configuration to reference it."
+    ],
+    "answer": [2],
+    "module": "Module 7"
+  },
+  {
+    "id": "79",
+    "question": "A function's Amazon Resource Name (ARN) is as follows: arn:aws:lambda:aws-region:acct-id:function:helloworld:PROD Which statement about this function is correct, based on its ARN?",
+    "options": [
+      "This ARN will invoke the immutable PROD version of the function.",
+      "This ARN will invoke the version of the function that is currently associated with the PROD alias.",
+      "This ARN will invoke the function and include the AWS Lambda layer that is named PROD.",
+      "This ARN will deploy the helloworld function into the PROD account."
+    ],
+    "answer": [1],
+    "module": "Module 7"
+  },
+  {
+    "id": "70",
+    "question": "Users of a serverless application have reported errors that occur when they try to retrieve order information. Assuming that AWS X-Ray is enabled, what is the first step the developer might take in X-Ray to start troubleshooting the reported issues quickly?",
+    "options": [
+      "Drill down into the most recent traces to look for errors.",
+      "Search for metadata that is related to the users who are reporting issues.",
+      "Add annotations that the developer can use to start grouping and filtering traces.",
+      "Use the service map to visually locate errors across the application."
+    ],
+    "answer": [3],
+    "module": "Module 7"
+  }
+]

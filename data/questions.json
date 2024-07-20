@@ -109,5 +109,906 @@
     ],
     "answer": [1],
     "module": "Module 5"
+  },
+  {
+    "id": "61",
+    "question": "Which of the following is a valid HTTP method used in RESTful web services?",
+    "options": ["GET", "POST", "DELETE", "All of the above"],
+    "answer": [3],
+    "module": "Module 6"
+  },
+  {
+    "id": "62",
+    "question": "What does CRUD stand for in the context of RESTful web services?",
+    "options": [
+      "Create, Read, Update, Delete",
+      "Connect, Reset, Update, Delete",
+      "Create, Reset, Upload, Download",
+      "None of the above"
+    ],
+    "answer": [0],
+    "module": "Module 6"
+  },
+  {
+    "id": "63",
+    "question": "Which HTTP method is used to update a resource in a RESTful web service?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answer": [2],
+    "module": "Module 6"
+  },
+  {
+    "id": "64",
+    "question": "Which HTTP status code indicates a successful request?",
+    "options": [
+      "200 OK",
+      "404 Not Found",
+      "500 Internal Server Error",
+      "403 Forbidden"
+    ],
+    "answer": [0],
+    "module": "Module 6"
+  },
+  {
+    "id": "65",
+    "question": "In RESTful web services, which format is commonly used to represent resources?",
+    "options": ["XML", "JSON", "HTML", "Both XML and JSON"],
+    "answer": [3],
+    "module": "Module 6"
+  },
+  {
+    "id": "66",
+    "question": "What does the acronym REST stand for?",
+    "options": [
+      "Representational State Transfer",
+      "Representational Stateless Transfer",
+      "Remote State Transfer",
+      "Remote Stateless Transfer"
+    ],
+    "answer": [0],
+    "module": "Module 6"
+  },
+  {
+    "id": "71",
+    "question": "Which statement describes a characteristic of AWS Lambda?",
+    "options": [
+      "Lambda runs code only when it is activated by an event and uses only the compute resources that are needed.",
+      "A developer's methods and configuration options for ensuring high availability with Lambda are similar to their approach with Amazon Elastic Compute Cloud (Amazon EC2).",
+      "Lambda functions run in on-demand, temporary environments, and the developer controls when new environments are created or shut down.",
+      "A developer must write Lambda functions that use one of the runtimes that the Lambda service provides."
+    ],
+    "answer": [0],
+    "module": "Module 7"
+  },
+  {
+    "id": "72",
+    "question": "Which constraint cannot be modified?",
+    "options": [
+      "Function timeout",
+      "Reserved concurrency",
+      "Burst quota",
+      "Regional quota"
+    ],
+    "answer": [2],
+    "module": "Module 7"
+  },
+  {
+    "id": "73",
+    "question": "Which option describes how Amazon API Gateway invokes AWS Lambda?",
+    "options": [
+      "API Gateway directly invokes a function with a synchronous invocation.",
+      "Lambda processes API Gateway requests asynchronously and retries each request up to two times.",
+      "Lambda uses an event source mapping and polls API Gateway for requests.",
+      "API Gateway directly invokes a function and retries the request until it succeeds or expires."
+    ],
+    "answer": [0],
+    "module": "Module 7"
+  },
+  {
+    "id": "74",
+    "question": "Which actions require permissions that are defined in the AWS Lambda execution role? (Select TWO.)",
+    "options": [
+      "A Lambda function writes to an Amazon S3 bucket.",
+      "A Lambda function reads from an Amazon DynamoDB table.",
+      "A Lambda function creates log groups.",
+      "A Lambda function deletes CloudWatch Logs.",
+      "A Lambda function writes logs to CloudWatch Logs."
+    ],
+    "answer": [0, 2],
+    "module": "Module 7"
+  },
+  {
+    "id": "75",
+    "question": "Which AWS Lambda deployment option should be used?",
+    "options": [
+      "Copy the code into the Lambda console editor to create and deploy the function.",
+      "Upload a .zip file of the code to create and deploy the function.",
+      "Use the AWS CLI to deploy the function directly from the developer's machine.",
+      "Create a deployment package that includes the code and dependencies, and upload it to an Amazon S3 bucket."
+    ],
+    "answer": [0],
+    "module": "Module 7"
+  },
+  {
+    "id": "76",
+    "question": "Which issue might be addressed by adding provisioned concurrency to an AWS Lambda function?",
+    "options": [
+      "Another Lambda function runs in the same account and Region. It sometimes spikes and consumes all available concurrency, causing the function to fail.",
+      "An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests.",
+      "A legacy backend system fails intermittently when the developer connects to it. To avoid extra costs, they want to reduce the function's wait time when the backend fails.",
+      "The developer wants more visibility into transactions that use the Lambda function to identify bottlenecks."
+    ],
+    "answer": [1],
+    "module": "Module 7"
+  },
+  {
+    "id": "77",
+    "question": "Which AWS Lambda configuration setting might a developer use to manage function errors when configuring an Amazon Simple Notification Service (Amazon SNS) topic as the event source for a Lambda function? (Select TWO.)",
+    "options": [
+      "State machines",
+      "File systems",
+      "Destinations",
+      "Virtual private cloud",
+      "Asynchronous invocations"
+    ],
+    "answer": [2, 4],
+    "module": "Module 7"
+  },
+  {
+    "id": "78",
+    "question": "A zipped deployment package including code and custom libraries is 75 MB in size. Which AWS Lambda deployment option should be used?",
+    "options": [
+      "Copy the code into the Lambda console editor to create and deploy the function.",
+      "Upload a .zip file from an integrated development environment (IDE) to load the deployment package directly into the Lambda console.",
+      "Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console.",
+      "Upload the deployment package to an Amazon Elastic Block Store (Amazon EBS) volume, and use the File Systems configuration to reference it."
+    ],
+    "answer": [2],
+    "module": "Module 7"
+  },
+  {
+    "id": "79",
+    "question": "A function's Amazon Resource Name (ARN) is as follows: arn:aws:lambda:aws-region:acct-id:function:helloworld:PROD Which statement about this function is correct, based on its ARN?",
+    "options": [
+      "This ARN will invoke the immutable PROD version of the function.",
+      "This ARN will invoke the version of the function that is currently associated with the PROD alias.",
+      "This ARN will invoke the function and include the AWS Lambda layer that is named PROD.",
+      "This ARN will deploy the helloworld function into the PROD account."
+    ],
+    "answer": [1],
+    "module": "Module 7"
+  },
+  {
+    "id": "70",
+    "question": "Users of a serverless application have reported errors that occur when they try to retrieve order information. Assuming that AWS X-Ray is enabled, what is the first step the developer might take in X-Ray to start troubleshooting the reported issues quickly?",
+    "options": [
+      "Drill down into the most recent traces to look for errors.",
+      "Search for metadata that is related to the users who are reporting issues.",
+      "Add annotations that the developer can use to start grouping and filtering traces.",
+      "Use the service map to visually locate errors across the application."
+    ],
+    "answer": [3],
+    "module": "Module 7"
+  },
+  {
+    "id": "81",
+    "question": "What is a container?",
+    "options": [
+      "A full virtual machine with its own OS",
+      "A standardized unit of software that contains everything an application needs to run",
+      "A server hosting multiple applications",
+      "An application running on a cloud service"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "82",
+    "question": "What does a Dockerfile do?",
+    "options": [
+      "Manages the deployment of multiple containers",
+      "Specifies the components included in a container image",
+      "Monitors the performance of containers",
+      "Stores the data used by containers"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "83",
+    "question": "Which service is used to deploy and manage Kubernetes clusters on AWS?",
+    "options": ["Amazon ECS", "Amazon ECR", "Amazon EKS", "AWS Fargate"],
+    "answer": [2],
+    "module": "Module 8"
+  },
+  {
+    "id": "84",
+    "question": "What is the primary benefit of using containers over traditional VMs?",
+    "options": [
+      "Containers provide full OS isolation",
+      "Containers are faster to start and use fewer resources",
+      "Containers require no updates",
+      "Containers can run on any hardware"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "85",
+    "question": "Which AWS service is a fully managed container registry?",
+    "options": ["Amazon ECS", "Amazon ECR", "Amazon EKS", "AWS Fargate"],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "86",
+    "question": "What is the purpose of a Docker container's read/write layer?",
+    "options": [
+      "To store long-term persistent data",
+      "To enable the application to function properly while running",
+      "To manage network settings",
+      "To handle container orchestration"
+    ],
+    "answer": [1],
+    "module": "Module 8"
+  },
+  {
+    "id": "87",
+    "question": "Which deployment policy in Elastic Beanstalk involves downtime during deployment?",
+    "options": ["All at once", "Rolling", "Rolling with batch", "Blue/Green"],
+    "answer": [0],
+    "module": "Module 8"
+  },
+  {
+    "id": "88",
+    "question": "Which service can be used to launch containers on both AWS Fargate and Amazon EC2?",
+    "options": ["Amazon ECS", "Amazon ECR", "Amazon EKS", "Elastic Beanstalk"],
+    "answer": [0],
+    "module": "Module 8"
+  },
+  {
+    "id": "89",
+    "question": "Which benefit is NOT associated with Docker containers?",
+    "options": [
+      "Portability",
+      "Faster development cycles",
+      "Better resource utilization",
+      "Full OS virtualization"
+    ],
+    "answer": [3],
+    "module": "Module 8"
+  },
+  {
+    "id": "80",
+    "question": "What type of architecture is best suited for microservices?",
+    "options": [
+      "Monolithic architecture",
+      "Serverless architecture",
+      "Virtualized architecture",
+      "Containerized architecture"
+    ],
+    "answer": [3],
+    "module": "Module 8"
+  },
+  {
+    "id": "98",
+    "question": "Which use case suggests the use of Amazon CloudFront Functions?",
+    "options": [
+      "A function that redirects the viewer to a different URL and adds a custom response header",
+      "A function that uses a third-party library",
+      "A function that requires network access to use external services for processing",
+      "A function that requires access to the body of HTTP requests"
+    ],
+    "answer": [0],
+    "module": "Module 9"
+  },
+  {
+    "id": "99",
+    "question": "Which statement reflects a benefit of lazy loading as a caching strategy?",
+    "options": [
+      "Lazy loading avoids filling up the cache with data that is not requested.",
+      "With lazy loading, data in the cache never becomes stale.",
+      "With lazy loading, every write involves two trips—a write to the cache and a write to the database—which adds latency to the process.",
+      "Lazy loading might result in cache churn. The cache might be updated often if certain records are updated repeatedly."
+    ],
+    "answer": [0],
+    "module": "Module 9"
+  },
+  {
+    "id": "90",
+    "question": "A developer has been asked whether caching might improve the performance of their online bidding application. How should they answer this question?",
+    "options": [
+      "Caching probably will not yield much performance improvement for this type of application.",
+      "Caching might improve performance by reducing the number of hits to the backend database. However, caching cannot improve performance issues that occur between the client and the web server.",
+      "Using different types of caching at each application layer might improve both the frontend and backend performance.",
+      "Caching might greatly improve performance if the application is compute heavy, but if the application is read heavy, a cache will not provide much benefit."
+    ],
+    "answer": [2],
+    "module": "Module 9"
+  },
+  {
+    "id": "101",
+    "question": "Which option describes how a message queue processes messages?",
+    "options": [
+      "The queue polls producers for new messages.",
+      "Consumers poll the queue for messages.",
+      "The queue broadcasts messages to consumers.",
+      "Consumers notify the queue when a message has been successfully processed. The queue configuration determines whether the message should be available to other consumers."
+    ],
+    "answer": [1],
+    "module": "Module 10"
+  },
+  {
+    "id": "102",
+    "question": "Which option describes how publish/subscribe (pub/sub) messaging works?",
+    "options": [
+      "Producers send messages to subscribers.",
+      "Subscribers poll topics for new messages.",
+      "When a topic receives a new message, the topic sends the message to the first subscriber who responds to a notification.",
+      "A new topic message is pushed out to all topic subscribers."
+    ],
+    "answer": [3],
+    "module": "Module 10"
+  },
+  {
+    "id": "103",
+    "question": "A developer wants to add an Amazon Simple Queue Service (Amazon SQS) queue to decouple incoming order requests from a backend database. Which Amazon SQS operations might be part of this update?",
+    "options": [
+      "Use the SendMessage operation with the QueueURL mapped to the database endpoint to put messages on the queue.",
+      "Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time.",
+      "Use the DeleteMessage operation to change the visibility of the message as soon as the ReceiptHandle is received.",
+      "Use the ReceiveMessage operation with the WaitTimeSeconds parameter set to 0 to reduce the number of empty requests."
+    ],
+    "answer": [1],
+    "module": "Module 10"
+  },
+  {
+    "id": "104",
+    "question": "A tester reports that Amazon Simple Queue Service (Amazon SQS) messages are being processed more than once. The developer finds that processing servers are not completing as quickly as expected, and messages are made available to other consumers before the prior consumer deletes them. Which option might reduce occurrences of this issue?",
+    "options": [
+      "Increase the visibility timeout.",
+      "Increase maxReceiveCount.",
+      "Increase MaxNumberOfMessages.",
+      "Increase the number of producers on the queue."
+    ],
+    "answer": [0],
+    "module": "Module 10"
+  },
+  {
+    "id": "105",
+    "question": "For an order-processing application that uses an Amazon Simple Queue Service (Amazon SQS) queue, a developer finds that an older version of the client generates order records that fail the backend process. The failures cause a bottleneck on the queue. How might the developer reduce the impact of the failed records?",
+    "options": [
+      "Increase the visibility timeout and set a high value for MaxNumberOfMessages.",
+      "Add a dead-letter queue and set a low maxReceiveCount.",
+      "Use long polling and set a high wait time.",
+      "Change the queue type from standard to First-In-First-Out (FIFO) and set a high throughput rate."
+    ],
+    "answer": [1],
+    "module": "Module 10"
+  },
+  {
+    "id": "106",
+    "question": "Which statement about Amazon Simple Queue Service (Amazon SQS) polling options is true?",
+    "options": [
+      "By default, when you make a ReceiveMessage API call, Amazon SQS performs long polling.",
+      "When long polling is configured, WaitTimeSeconds is set to 0.",
+      "When short polling is configured, Amazon SQS queries all of its servers.",
+      "When short polling is configured, Amazon SQS samples a subset of its servers."
+    ],
+    "answer": [3],
+    "module": "Module 10"
+  },
+  {
+    "id": "107",
+    "question": "Which statement about Amazon Simple Notification Service (Amazon SNS) is true?",
+    "options": [
+      "An SNS topic is a logical access point, which acts as a communication channel.",
+      "A publisher can only send messages to topics that they have created.",
+      "By default, different subscribers to a topic receive different messages.",
+      "Amazon SNS defines a single delivery policy, which is applied to all delivery protocols."
+    ],
+    "answer": [0],
+    "module": "Module 10"
+  },
+  {
+    "id": "108",
+    "question": "An Amazon Simple Notification Service (Amazon SNS) topic receives messages about orders. An AWS Lambda function that processes canceled orders is subscribed to the topic. How might the developer reduce costs by only invoking the Lambda function for canceled orders?",
+    "options": [
+      "Put an Amazon Simple Queue Service (Amazon SQS) queue in front of the Lambda function.",
+      "Separate the new order and cancel order messages to be sent by two different publishers.",
+      "Set up a filter policy so that the Lambda function subscription only receives cancel order messages.",
+      "Use the Confirm Subscription operation to limit which messages the Lambda function receives."
+    ],
+    "answer": [2],
+    "module": "Module 10"
+  },
+  {
+    "id": "109",
+    "question": "A developer needs to build a custom application to put customer application log records onto an Amazon Kinesis data stream. What should they use to build the application?",
+    "options": [
+      "Use the Kinesis API.",
+      "Use the Kinesis Producer Library (KPL).",
+      "Use the Kinesis Client Library (KCL).",
+      "Use Amazon Kinesis Data Analytics."
+    ],
+    "answer": [1],
+    "module": "Module 10"
+  },
+  {
+    "id": "110",
+    "question": "Which statement about Amazon Kinesis Data Streams is true?",
+    "options": [
+      "When a record is added to the stream, the record is available until a consumer deletes it.",
+      "The data records in a data stream are distributed into shards.",
+      "A standard data stream can have one consumer. With the enhanced fanout option, you can add multiple consumers.",
+      "A stream consumer must delete the records that it processes successfully."
+    ],
+    "answer": [1],
+    "module": "Module 10"
+  },
+  {
+    "id": "111",
+    "question": "Which scenario suggests the need for a task coordination service such as AWS Step Functions?",
+    "options": [
+      "A website that serves static content is expanding its reach to a global audience.",
+      "A serverless application must run a series of AWS Lambda functions that are dependent on each other.",
+      "A monolithic application that is written in Java is updating its technology stack.",
+      "A reporting application must update its calculation logic to provide more analytical data to business users."
+    ],
+    "answer": [1],
+    "module": "Module 11"
+  },
+  {
+    "id": "112",
+    "question": "Which statement describes a benefit of using AWS Step Functions for an application?",
+    "options": [
+      "Step Functions integrates with state machines so that developers can transition between their Step Functions workflow and their state machine workflow.",
+      "Step Functions can be configured with Amazon EC2 Auto Scaling to scale up and down.",
+      "Step Functions can be defined by using either Python or Node.js.",
+      "Developers can use Step Functions to build visual workflows."
+    ],
+    "answer": [3],
+    "module": "Module 11"
+  },
+  {
+    "id": "113",
+    "question": "What is the role of the Task state type in AWS Step Functions?",
+    "options": [
+      "Task states are used to stop a failed workflow.",
+      "Task states perform a unit of work.",
+      "Task states provide branching logic.",
+      "Task states tell the state machine the order to perform the steps in."
+    ],
+    "answer": [1],
+    "module": "Module 11"
+  },
+  {
+    "id": "114",
+    "question": "An application that processes order returns must complete different steps depending on whether the return is within 30 days of purchase. Which AWS Step Functions state could a developer use to implement this logic?",
+    "options": ["Parallel", "Task", "Choice", "Wait"],
+    "answer": [2],
+    "module": "Module 11"
+  },
+  {
+    "id": "115",
+    "question": "An application that processes order returns must run the same AWS Lambda function for each item in an order. Which AWS Step Functions state could a developer use to implement this logic?",
+    "options": ["Parallel", "Pass", "Map", "Task"],
+    "answer": [2],
+    "module": "Module 11"
+  },
+  {
+    "id": "116",
+    "question": "Which statement is true for both Succeed states and Fail states?",
+    "options": [
+      "Succeed states and Fail states do not include the Next field.",
+      "The End field is not required because Succeed states and Fail states are not terminal states.",
+      "The Type field is optional for Succeed states and Fail states.",
+      "The End field is required because Succeed states and Fail states are terminal states."
+    ],
+    "answer": [0],
+    "module": "Module 11"
+  },
+  {
+    "id": "117",
+    "question": "An application that processes order returns must run two independent audit checks. When both checks are successfully completed, the return authorization step is run. Which AWS Step Functions state could a developer use to implement this logic?",
+    "options": ["Parallel", "Task", "Choice", "Wait"],
+    "answer": [0],
+    "module": "Module 11"
+  },
+  {
+    "id": "118",
+    "question": "How is a taskToken used in an AWS Step Functions use case that includes a manual approval step?",
+    "options": [
+      "A taskToken is generated when the workflow hits a Wait state.",
+      "A taskToken is generated when a task state is entered and is used to finish the task.",
+      "A taskToken is used to define branching logic in a state machine.",
+      "A taskToken is an output of the Success state in a synchronous Step Functions Express workflow."
+    ],
+    "answer": [1],
+    "module": "Module 11"
+  },
+  {
+    "id": "119",
+    "question": "Which use case is a good fit for AWS Step Functions Express workflows?",
+    "options": [
+      "All workflows in the application must be auditable up to 90 days after a completed run.",
+      "The workflow requires a step that will run an application that is hosted on an Amazon Elastic Compute Cloud (Amazon EC2) instance.",
+      "The workflow takes between 30 minutes and 1 hour to run.",
+      "The workflow must support a very high rate of events that come from Internet of Things (IoT) devices."
+    ],
+    "answer": [3],
+    "module": "Module 11"
+  },
+  {
+    "id": "120",
+    "question": "Which statement about AWS Step Functions is true?",
+    "options": [
+      "A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in API Gateway.",
+      "Step Functions can only be used to manage state transitions within a single state machine.",
+      "Step Functions do not support integration with other AWS services.",
+      "A developer can only use the AWS Management Console to define Step Functions workflows."
+    ],
+    "answer": [0],
+    "module": "Module 11"
+  },
+  {
+    "id": "121",
+    "question": "Which statement about creating secure connections is true?",
+    "options": [
+      "Both Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are standards that AWS developed for secure communications.",
+      "SSL uses certificates to establish website identity, but TLS does not.",
+      "Both SSL and TLS encrypt network communications between connected resources.",
+      "SSL is a newer version of TLS. Both are used to establish the identity of websites."
+    ],
+    "answer": [2],
+    "module": "Module 12"
+  },
+  {
+    "id": "122",
+    "question": "Which step in the secure connection process is the responsibility of the certificate authority (CA)?",
+    "options": [
+      "Issue a certificate.",
+      "Verify whether the certificate is from a trusted source.",
+      "Send an encrypted session key.",
+      "Send a certificate and public key to the client."
+    ],
+    "answer": [0],
+    "module": "Module 12"
+  },
+  {
+    "id": "123",
+    "question": "Which statement about AWS Certificate Manager (ACM) is true?",
+    "options": [
+      "ACM can provision public certificates, but for private certificates, developers must produce their own certificate and connect it to ACM.",
+      "ACM manages certificate renewals for both public and private certificates.",
+      "ACM costs are based on the number of active public certificates in an AWS account.",
+      "A developer must configure a load balancer to use ACM certificates."
+    ],
+    "answer": [1],
+    "module": "Module 12"
+  },
+  {
+    "id": "124",
+    "question": "Which statement reflects a best practice for security credentials?",
+    "options": [
+      "Only share access keys between users in the same AWS account.",
+      "Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials.",
+      "If there are unencrypted access keys, embed them in code that is available only to developers but not accessible to users.",
+      "Do not allow programmatic authentication to AWS services."
+    ],
+    "answer": [1],
+    "module": "Module 12"
+  },
+  {
+    "id": "125",
+    "question": "What is the primary difference between AWS Security Token Service (AWS STS) authentication by federated users and AWS STS authentication by AWS Identity and Access Management (IAM) users?",
+    "options": [
+      "With federated users, the application calls an identity broker, but this step is skipped with IAM users.",
+      "With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM.",
+      "With federated users, the second authentication is made against an IdP. With IAM users, the second authentication is made against IAM.",
+      "With federated users, applications use the temporary security credentials and token to make requests to an AWS service. No token is necessary with IAM users."
+    ],
+    "answer": [1],
+    "module": "Module 12"
+  },
+  {
+    "id": "126",
+    "question": "A developer has been asked to investigate how website files have been deleted from an Amazon Simple Storage Service (Amazon S3) bucket. Which approach should they take?",
+    "options": [
+      "Use AWS CloudTrail to search for information about delete object events on the S3 bucket.",
+      "Use AWS Security Token Service (AWS STS) to block deletions from the S3 bucket.",
+      "Use AWS Identity and Access Management (IAM) to search for users who have used their delete permissions on the S3 bucket.",
+      "Use the AWS STS GetSessionToken API call to retrieve information about users who deleted files from the S3 bucket."
+    ],
+    "answer": [0],
+    "module": "Module 12"
+  },
+  {
+    "id": "127",
+    "question": "A developer has been asked to add a sign-up and sign-in service to their application. Which Amazon Cognito feature should they use?",
+    "options": [
+      "Amazon Cognito identity pool",
+      "Amazon Cognito user pool",
+      "Amazon Cognito Lambda trigger",
+      "Amazon Cognito access token"
+    ],
+    "answer": [1],
+    "module": "Module 12"
+  },
+  {
+    "id": "128",
+    "question": "A developer has been asked to reduce the security risk of users who sign in to their application with username and password pairs that they use on other websites. Which Amazon Cognito user pool feature might the developer configure?",
+    "options": [
+      "Identity tokens",
+      "Phone and email verification",
+      "Adaptive authentication",
+      "Compromised credentials check"
+    ],
+    "answer": [3],
+    "module": "Module 12"
+  },
+  {
+    "id": "129",
+    "question": "Which statement about Amazon Cognito identity pools is true?",
+    "options": [
+      "With an identity pool, users can obtain temporary, limited-privilege AWS credentials to access other AWS services.",
+      "Identity pools replace the need for a third-party identity provider.",
+      "When using Amazon Cognito identity pools, a user would not also use Amazon Cognito user pools.",
+      "Identity pools provide sign-up and sign-in functionality for mobile apps."
+    ],
+    "answer": [0],
+    "module": "Module 12"
+  },
+  {
+    "id": "130",
+    "question": "A developer plans to use Amazon Cognito user pools with Amazon API Gateway. Which step is part of the user pool authentication flow with API Gateway?",
+    "options": [
+      "A mobile app sends a request to API Gateway, and API Gateway gets JSON Web Tokens (JWTs) from the user pool.",
+      "A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app.",
+      "The user pool validates the tokens against an identity pool.",
+      "Amazon Cognito invokes the API after successfully validating the permissions."
+    ],
+    "answer": [1],
+    "module": "Module 12"
+  },
+  {
+    "id": "131",
+    "question": "Which option describes the philosophy of DevOps?",
+    "options": [
+      "DevOps is about teaching development and operations teams to use the same set of tools to shorten testing and deployment cycles.",
+      "DevOps is about removing barriers between development and operations functions to optimize productivity and reliability.",
+      "DevOps culture is reflected in the idea of 'Processes over people,' which means that, with strong processes, any team member can perform any task.",
+      "DevOps culture is reflected in the idea that tight coupling leads to tighter parity between development, test, and production environments."
+    ],
+    "answer": [1],
+    "module": "Module 13"
+  },
+  {
+    "id": "132",
+    "question": "How are DevOps practices reflected in the software development lifecycle for cloud architectures?",
+    "options": [
+      "Every phase of the software development lifecycle is automated.",
+      "Developers can use continuous integration to merge code into their local repository and connect to the test environment for authentic test scenarios.",
+      "With continuous delivery, developers can deploy code without the need for continuous monitoring.",
+      "Infrastructure tools compare local development environments to test environments and staging environments and report on environmental differences so that the operations team can ensure parity."
+    ],
+    "answer": [0],
+    "module": "Module 13"
+  },
+  {
+    "id": "133",
+    "question": "How might a developer use AWS CodePipeline in their continuous integration and continuous deployment (CI/CD) process?",
+    "options": [
+      "Compile source code, run tests, and produce software packages that are ready to deploy.",
+      "Host Git-based repositories and provide source control.",
+      "Deploy to a variety of compute services.",
+      "Automate the steps that are required to release software based on a release model that the developer defines."
+    ],
+    "answer": [3],
+    "module": "Module 13"
+  },
+  {
+    "id": "134",
+    "question": "Which statement about continuous integration and continuous delivery/deployment (CI/CD) is true?",
+    "options": [
+      "Continuous deployment reduces the risk of production bugs, but it might increase the time that it takes to deliver new features.",
+      "Continuous integration requires teams to write automated tests.",
+      "Continuous delivery extends all the way to production deployment without human intervention.",
+      "Continuous deployment extends from check-in through production, but some manual intervention occurs after code is checked in and before that code is released to customers."
+    ],
+    "answer": [1],
+    "module": "Module 13"
+  },
+  {
+    "id": "135",
+    "question": "A developer wants to use infrastructure as code for their Java-based web application on AWS. Which task might be part of their work?",
+    "options": [
+      "Create an Amazon Elastic Compute Cloud (Amazon EC2) instance by using AWS CodeBuild, and use AWS CodeDeploy to automatically push the application to the EC2 instance.",
+      "Create a Java AWS CloudFormation template that defines the application and database layers for the application.",
+      "Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application.",
+      "Use AWS CodePipeline to create a pipeline that automates the complete release of the application."
+    ],
+    "answer": [2],
+    "module": "Module 13"
+  },
+  {
+    "id": "136",
+    "question": "A developer wants to use a single AWS CloudFormation template for both the test and production environments. Which section of the template might they use to support this approach?",
+    "options": [
+      "Use the Transform section to define the variables that must be changed for each environment during stack creation or update.",
+      "Use the Format Version section to define the parameters to be passed for each environment during stack creation or update.",
+      "Use the Outputs section to define each environment that the template should create during stack creation or update.",
+      "Use the Conditions section to control whether certain resources are created during stack creation or update."
+    ],
+    "answer": [3],
+    "module": "Module 13"
+  },
+  {
+    "id": "137",
+    "question": "Which statement about AWS CloudFormation stacks is true?",
+    "options": [
+      "Deleting a stack deletes its CloudFormation template but does not delete any resources that the most recent deployment created.",
+      "A CloudFormation stack is a unit of deployment.",
+      "An existing stack must be deleted before deploying an updated template to modify the resource parameters of that stack.",
+      "CloudFormation has some quotas that are related to the resources defined in each stack, but no quotas are related to the number of stacks themselves."
+    ],
+    "answer": [1],
+    "module": "Module 13"
+  },
+  {
+    "id": "138",
+    "question": "A developer is building their first serverless application on AWS. What must they think about differently with respect to deploying the application?",
+    "options": [
+      "They can't replicate the production environment locally in the same way that they might with a server-based deployment.",
+      "They can't use AWS CloudFormation for infrastructure as code to deploy the application.",
+      "The steps to connect to the AWS Lambda server for debugging are different than those to connect to a traditional server.",
+      "Serverless development tools are not integrated with other AWS development tools that are used in the deployment pipeline."
+    ],
+    "answer": [0],
+    "module": "Module 13"
+  },
+  {
+    "id": "139",
+    "question": "How does an AWS Serverless Application Model (AWS SAM) template differ from an AWS CloudFormation template?",
+    "options": [
+      "AWS SAM templates are written in the same language as the AWS Lambda runtime that is used in the functions that are being deployed.",
+      "The Globals section is found only in AWS SAM templates.",
+      "The Resources section in an AWS SAM template may only contain serverless resources.",
+      "The Transform declaration is not required for AWS SAM templates."
+    ],
+    "answer": [1],
+    "module": "Module 13"
+  },
+  {
+    "id": "140",
+    "question": "The following lines are in the Resources section of an AWS Serverless Application Model (AWS SAM) template. What would these lines create?\n\nResources:\n  Orders:\n    Type: AWS::Serverless::SimpleTable",
+    "options": [
+      "An AWS Lambda function that is named Orders and is connected to an Amazon DynamoDB table",
+      "An Amazon DynamoDB table that is called Orders",
+      "An API GET method that reads from the Orders table",
+      "A MySQL table that is called Orders"
+    ],
+    "answer": [1],
+    "module": "Module 13"
+  },
+  {
+    "id": "201",
+    "question": "The systems development lifecycle (SDLC) has six phases. The first three phases are plan, define, and design. What are the last three phases of the SDLC?",
+    "options": [
+      "Test, deploy, and maintain",
+      "Code, build, and test",
+      "Develop, deploy, and maintain",
+      "Code, build, and maintain"
+    ],
+    "answer": [2],
+    "module": "Module 2"
+  },
+  {
+    "id": "202",
+    "question": "Which task is performed during the develop stage of the systems development lifecycle (SDLC)?",
+    "options": [
+      "The system is put into use.",
+      "New system requirements are defined.",
+      "New components are obtained and installed.",
+      "Deficiencies are identified."
+    ],
+    "answer": [2],
+    "module": "Module 2"
+  },
+  {
+    "id": "203",
+    "question": "A systems administrator must grant a new developer permissions that are associated with the developer role. This role is associated with the developer group. Which AWS service should the administrator use to assign the new developer to the developer group?",
+    "options": [
+      "AWS Resource Access Manager (AWS RAM)",
+      "Amazon Simple Storage Service (Amazon S3)",
+      "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "AWS Identity and Access Management (IAM)"
+    ],
+    "answer": [3],
+    "module": "Module 2"
+  },
+  {
+    "id": "204",
+    "question": "A developer is setting up their development environment. They need an integrated development environment (IDE) that enables them to code with other people in real time. Which AWS service should they use?",
+    "options": [
+      "Amazon CloudFront",
+      "Amazon CloudWatch",
+      "AWS CloudShell",
+      "AWS Cloud9"
+    ],
+    "answer": [3],
+    "module": "Module 2"
+  },
+  {
+    "id": "205",
+    "question": "What are three ways to interact with AWS service application programming interfaces (APIs)? (Select the THREE best options.)",
+    "options": [
+      "AWS Identity and Access Management (IAM)",
+      "AWS Management Console",
+      "AWS Command Line Interface (AWS CLI)",
+      "AWS CloudTrail",
+      "AWS X-Ray",
+      "AWS software development kits (SDKs)"
+    ],
+    "answer": [1, 2, 5],
+    "module": "Module 2"
+  },
+  {
+    "id": "206",
+    "question": "Which tools enable users to control their AWS services from the command line and automate service management with scripts? (Select THREE.)",
+    "options": [
+      "AWS X-Ray",
+      "AWS Tools for PowerShell",
+      "AWS CodeCommit",
+      "AWS Amplify",
+      "AWS Serverless Application Model (AWS SAM)",
+      "AWS Cloud9"
+    ],
+    "answer": [1, 3, 4],
+    "module": "Module 2"
+  },
+  {
+    "id": "207",
+    "question": "Which are benefits of using Amazon CodeWhisperer with AWS Cloud9? (Select TWO.)",
+    "options": [
+      "Optimizes code",
+      "Accelerates coding tasks",
+      "Enhances application security",
+      "Refactors code",
+      "Generates documentation"
+    ],
+    "answer": [1, 2],
+    "module": "Module 2"
+  },
+  {
+    "id": "208",
+    "question": "Which statements describe AWS resource application programming interfaces (APIs)? (Select TWO.)",
+    "options": [
+      "They provide a higher-level abstraction than the low-level calls made by service client APIs.",
+      "They have at least one class per conceptual resource.",
+      "They provide a lower-level abstraction than the higher-level calls made by service client APIs.",
+      "They provide access to resources through objects and collections.",
+      "They have objects for request and result data."
+    ],
+    "answer": [3, 4],
+    "module": "Module 2"
+  },
+  {
+    "id": "209",
+    "question": "A developer is using the AWS software development kit (SDK) for Python (Boto3) and must specify the Region. Which method enables the developer to specify the Region?",
+    "options": [
+      "By setting the Region when they instantiate the service client",
+      "Users cannot specify the AWS Region in the service client",
+      "By setting the AWS_PROFILE environment variable",
+      "By associating a default Region with their profile in the credentials file in the .aws folder within their 'home' folder"
+    ],
+    "answer": [0],
+    "module": "Module 2"
+  },
+  {
+    "id": "210",
+    "question": "A developer makes an application programming interface (API) call to access an Amazon Simple Storage Service (Amazon S3) bucket that doesn't exist. Which HTTP response code does the developer receive from the AWS service?",
+    "options": ["300 series", "200 series", "400 series", "500 series"],
+    "answer": [2],
+    "module": "Module 2"
   }
 ]
