@@ -14,6 +14,10 @@ function startQuiz() {
       document.getElementById("quiz").style.display = "block";
       updateScoreTracker();
       showQuestion();
+    })
+    .catch((error) => {
+      console.error("Error fetching questions:", error);
+      alert("Failed to load questions. Please try again later.");
     });
 }
 
@@ -99,6 +103,9 @@ function showResults() {
                                 <div><strong>Result:</strong> ${resultIcon}</div>`;
     resultsContainer.appendChild(resultItem);
   });
+
+  // Scroll to the top of the results container
+  document.getElementById("results").scrollIntoView({ behavior: "smooth" });
 }
 
 function restartQuiz() {
