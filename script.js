@@ -88,9 +88,11 @@ function submitAnswer() {
 function showResults() {
   document.getElementById("quiz").style.display = "none";
   document.getElementById("results").style.display = "block";
+
+  const percentage = Math.round((score / selectedQuestionCount) * 100);
   document.getElementById(
     "score"
-  ).innerText = `${score} / ${selectedQuestionCount}`;
+  ).innerText = `${score} / ${selectedQuestionCount} (${percentage}%)`;
 
   const resultsContainer = document.getElementById("results-container");
   resultsContainer.innerHTML = "";
@@ -99,8 +101,8 @@ function showResults() {
     resultItem.classList.add("result-item");
     const resultIcon = answer.isCorrect ? "🟢" : "🔴";
     resultItem.innerHTML = `<div><strong>Question:</strong> ${answer.question}</div>
-                                <div><strong>Module:</strong> ${answer.module}</div>
-                                <div><strong>Result:</strong> ${resultIcon}</div>`;
+                                  <div><strong>Module:</strong> ${answer.module}</div>
+                                  <div><strong>Result:</strong> ${resultIcon}</div>`;
     resultsContainer.appendChild(resultItem);
   });
 
